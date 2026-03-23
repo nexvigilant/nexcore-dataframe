@@ -1,0 +1,19 @@
+[package]
+name = "nexcore-dataframe"
+version = "0.1.0"
+edition = "2024"
+license = "LicenseRef-NexVigilant-Proprietary"
+authors = ["NexVigilant Team"]
+description = "Sovereign columnar DataFrame engine — zero-unsafe, zero-external-dependency replacement for polars"
+rust-version = "1.85"
+
+[dependencies]
+nexcore-error = { path = "../nexcore-error" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+
+[dev-dependencies]
+tempfile = { workspace = true }
+
+[lints]
+workspace = true
